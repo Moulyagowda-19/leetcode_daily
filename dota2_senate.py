@@ -18,10 +18,10 @@ class Solution:
             ri = r.popleft()
             di = d.popleft()
             if ri < di:
-                # Radiant acts first and bans this Dire senator.
-                # Radiant returns to queue with index + n (next round)
+                
                 r.append(ri + n)
             else:
                 d.append(di + n)
         
         return "Radiant" if r else "Dire"
+
