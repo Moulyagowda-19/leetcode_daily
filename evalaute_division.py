@@ -19,7 +19,6 @@ class Solution:
                     result = dfs(neighbor, target, visited)
                     if result != -1:
                         return weight * result
-
             return -1
 
         results = []
@@ -28,5 +27,4 @@ class Solution:
                 results.append(-1.0)
             else:
                 results.append(dfs(a, b, set()))
-
         return results
