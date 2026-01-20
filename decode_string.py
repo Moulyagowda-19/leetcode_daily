@@ -15,5 +15,4 @@ def decodeString(self, s):
                 curr_str = prev_str + num * curr_str
             else:
                 curr_str += c
-        
         return curr_str
