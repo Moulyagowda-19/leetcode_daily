@@ -14,5 +14,4 @@ def goodNodes(self, root):
             good += dfs(node.right, max_so_far)
             
             return good
-        
         return dfs(root, root.val)
